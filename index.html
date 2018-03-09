@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hangman App</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-	<script src="app.js"></script>
-</head> 
-<body ng-app="HangmanApp" ng-controller="GameController">
-{{demo}}
+  <meta charset="utf-8">
+  <title>Catan Timer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id="timecard">
+     <div id="nameplate">Player Name</div>
+     <div id="timer">60</div>
+    </div>
+  </header>
+  <main>
+    <div id="diceholder">
+      <div class="dice"><div id="diceA"><img src="/dice-01.png"></div></div>
+      <div class="dice"><div id="diceB"><img src="/dice-01.png"></div></div>
+    </div>
+    <div id ="buttonholder">
+      <button id="roll">Roll</button>
+    </div>    
+
+  </main>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="app.js"></script>
 </body>
 </html>
