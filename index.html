@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <title>Catan Timer</title>
   <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div id="timecard">
-     <div id="nameplate">Player Name</div>
-     <div id="timer">60</div>
-    </div>
+  <header id="timecard">
+     <div id="nameplate">Roll to Start</div>
+     <div id="timer"></div>
+     <button id="pausebutton"><i class="material-icons">pause</i></button>
+     <button id="resetbutton"><i class="material-icons">replay</i></button>
   </header>
   <main>
     <div id="diceholder">
