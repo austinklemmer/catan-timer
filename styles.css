@@ -9,6 +9,7 @@ body {
 	text-align: center;
 	font-family: Roboto;
 	height: 100%;
+	-webkit-text-size-adjust: none;
 }
 
 header {
