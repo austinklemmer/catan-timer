@@ -114,8 +114,8 @@ function rollDie () {
 		$diceA.empty(); 
 		$diceB.empty();
 
-		$diceA.append('<img src="/dice-0' + dA + '.png"/>');
-		$diceB.append('<img src="/dice-0' + dB + '.png"/>');
+		$diceA.append('<img src="../dice-0' + dA + '.png"/>');
+		$diceB.append('<img src="../dice-0' + dB + '.png"/>');
 
 	});
 
