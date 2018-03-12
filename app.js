@@ -10,7 +10,6 @@ const $diceB = $('#diceB');
 const $roll = $('#roll');
 
 //establishing global variables and default states
-
 var ongoingTimer = false; // will hold an interval function. in the meantime, set to false to show that the game hasn't started
 var overtime = false; // same as above
 var timeLeft;
@@ -119,8 +118,8 @@ function rollDie () {
 		$diceA.empty(); 
 		$diceB.empty();
 
-		$diceA.append('<img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-0' + dA + '.png"/>');
-		$diceB.append('<img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-0' + dB + '.png"/>');
+		$diceA.append('<img src="/dice-0' + dA + '.png"/>');
+		$diceB.append('<img src="/dice-0' + dB + '.png"/>');
 
 	});
 
