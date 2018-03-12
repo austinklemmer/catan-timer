@@ -132,8 +132,8 @@ function rollDie () {
 		$diceA.empty(); 
 		$diceB.empty();
 
-		$diceA.append('<img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-0' + dA + '.png"/>');
-		$diceB.append('<img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-0' + dB + '.png"/>');
+		$diceA.append('<img src="/dice-0' + dA + '.png"/>');
+		$diceB.append('<img src="/dice-0' + dB + '.png"/>');
 
 	});
 
@@ -196,13 +196,16 @@ function displayClock (timeNow) {
 }
 
 
-function selectPlayerMenuToggle () {
+function toggleMenu () {
 	
 	if ($playerSelect.is(":visible") && tempPlayerSequence.length > 2) {
 
 		playerSequence = tempPlayerSequence;
 		currentPlayer = -1;
 		$timecard.css("backgroundColor", playerSequence[(currentPlayer+1) % playerSequence.length].color);
+		$nameplate.empty();
+    	$nameplate.append("Roll to Begin");
+
    		$roll.css("backgroundColor", playerSequence[(currentPlayer+1) % playerSequence.length].color);
    		if (playerSequence[0].name === "White") {
    			$roll.css('color', 'rgba(47, 49, 53, 0.4)');
@@ -334,7 +337,7 @@ $resetbutton.click(reset);
 
 //PLAYER SELECT
 
-$menuToggle.click(selectPlayerMenuToggle);
+$menuToggle.click(toggleMenu);
 
 $('#BlueToken').click(function() { addPlayer("Blue", "#417cf4", "#BlueToken"); });
 $('#OrangeToken').click(function() { addPlayer("Orange", "#f47442", "#OrangeToken"); });
