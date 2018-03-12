@@ -10,22 +10,60 @@
 </head>
 
 <body>
-  <header id="timecard">
+
+  <main id="welcomeScreen">
+    <h1>Catanable</h1>
+    <p>Keep the game going with this easy to use game timer.</p>
+    <button id="startButton">Start</button>
+  </main>
+
+  <div id="timecard" display="none">
      <div id="nameplate">Roll to Start</div>
      <div id="timer"></div>
      <button class="pause-reset" id="pausebutton"><i class="material-icons">pause</i></button>
      <button class="pause-reset" id="resetbutton"><i class="material-icons">replay</i></button>
-  </header>
-  <main>
+  </div>
+
+  <div id="bottomHalf" display="none">
     <div id="diceholder">
-      <div class="dice"><div id="diceA"><img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-01.png"></div></div>
-      <div class="dice"><div id="diceB"><img src="https://raw.githubusercontent.com/austinklemmer/catan-timer/master/dice-01.png"></div></div>
+      <div class="dice"><div id="diceA"><img src="/dice-01.png"></div></div>
+      <div class="dice"><div id="diceB"><img src="/dice-01.png"></div></div>
     </div>
     <div id ="buttonholder">
       <button id="roll">Roll</button>
+      <button class="menuToggle">Settings</button>
     </div>    
+  </div>
 
-  </main>
+  <div id="playerSelect" display="none">
+
+    <h2>Select Players</h2>
+    <table id="playerGrid">
+      <tr>
+        <td><div id="BlueToken" style="background-color: #417cf4;"></div></td>
+        <td><div id="OrangeToken" style="background-color: #f47442;"></div></td>
+      </tr>
+      <tr>
+        <td><div id="RedToken" style="background-color: #d33f3f;"></div></td>
+        <td><div id="WhiteToken" style="background-color: #ede7e1;"></div></td>
+      </tr>
+      <tr>
+        <td><div id="GreenToken" style="background-color: #36ba34;"></div></td>
+        <td><div id="BrownToken" style="background-color: #755948;"></div></td>
+      </tr>
+    </table>
+
+    <h2>Set Turn Length</h2>
+
+    <div id="turnLengthSelector">
+      <button id="subtractTime">-</button>
+      <div id="turnLengthPreview"></div>
+      <button id="addTime">+</button>
+    </div>
+
+    <button class="menuToggle">Confirm</button>
+  </div>
+
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
   <script src="app.js"></script>
 </body>
