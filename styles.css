@@ -11,11 +11,47 @@ body {
 	height: 100%;
 }
 
-header {
+#welcomeScreen{
+	background-color: #2f3135;
+	height: 100%;
+	padding: 4vh;
+	color: white;
+	text-align:center;
+}
+
+#welcomeScreen h1 {
+	font-weight: 500;
+	font-size: 10vh;
+	color: #36ba34;
+}
+
+#welcomeScreen p {
+	font-weight:200;
+	font-size: 4vh;
+	width: 70vw;
+	max-width:800px;
+	margin: auto;
+	margin-top: 6vh;
+	margin-bottom:8vh;}
+
+#startButton {
+	background-color: #36ba34;
+    border: none;
+    color: white;
+    padding: 3vh 6vh;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 4vh;
+    display: block;
+    margin: auto;
+}
+
+#timecard {
 	height: 50%;
 }
 
-main {
+#bottomHalf {
 	background-color: #2f3135;
 	height: 50%;
 }
@@ -53,7 +89,7 @@ main {
 }
 
 .dice {
-	margin:8vh 2vh;
+	margin:4vh 2vh;
 	display: inline-block;
 }
 
@@ -69,8 +105,6 @@ main {
 #buttonholder {
 	background-color: #2f3135;
 	margin:0;
-	height:30%;
-	width: 100%;
 }
 
 #roll {
@@ -82,4 +116,68 @@ main {
     text-decoration: none;
     vertical-align: middle;
     font-size: 4vh;
+    display: block;
+    margin: auto;
+}
+
+.menuToggle {
+	display: inline-block;
+	margin: auto;
+	margin-top: 4vh;
+	background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.2);
+    padding: 1vh 2vh;
+}
+
+#playerSelect {
+	height: 100%;
+	background-color: #2f3135;
+	text-align: center; 
+	padding: 4vh;
+}
+
+#playerGrid {
+	margin: auto;
+}
+
+#playerGrid td {
+	padding:3vh;
+	
+}
+
+#playerGrid td div {
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50%;
+	color: white;
+	font-weight: 600;
+	border: .7vh solid rgba(255,255,255,0);
+	line-height: 7vh;
+	font-size:3vh;
+}
+
+#playerSelect h2 {
+	color: rgba(255,255,255,0.2);
+	font-weight: 300;
+	font-size:3vh;
+}
+
+#turnLengthSelector * {
+	vertical-align: middle;
+}
+#turnLengthSelector button {
+	display: inline-block;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	font-size: 4vh;
+	padding: 2vh;
+	border: none;
+}
+
+#turnLengthPreview {
+	color: white;
+	font-size:8vh;
+	font-weight:200;
+	display: inline-block;
 }
