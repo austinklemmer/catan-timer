@@ -34,7 +34,7 @@ body {
 	margin-bottom:8vh;}
 
 #startButton {
-	background-color: #36ba34;
+    background-color: #36ba34;
     border: none;
     color: white;
     padding: 3vh 6vh;
@@ -127,6 +127,8 @@ body {
     border: 1px solid rgba(255,255,255,0.2);
     color: rgba(255,255,255,0.2);
     padding: 1vh 2vh;
+    font-size: 3vh;
+    font-weight:300;
 }
 
 #playerSelect {
