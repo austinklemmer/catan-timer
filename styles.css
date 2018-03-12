@@ -9,68 +9,61 @@ body {
 	text-align: center;
 	font-family: Roboto;
 	height: 100%;
-	-webkit-text-size-adjust: none;
 }
 
 header {
 	height: 50%;
-	min-height: 200px;
 }
 
 main {
 	background-color: #2f3135;
 	height: 50%;
-	min-height: 200px;
 }
 
 /* base css for all of the dynamic elements */ 
 
 #nameplate {
 	color: #2f3135;
-	padding-top: 10%;
+	padding-top: 10vh;
 	text-transform: uppercase;
+	font-size:2.5vh;
 	font-weight:500;
-	letter-spacing: 5px;
-	margin-left: 5px; /*offset the last letter's spacing*/
+	letter-spacing: 1vh;
+	margin-left: 1vh; /*offset the last letter's spacing*/
 }
 
 #timer {
 	color: #2f3135;
 	margin:auto;
 	width: 100%;
-	font-size: 6em;
+	font-size: 20vh;
 	font-weight: 200;
 }
 
-#pausebutton {
+.pause-reset {
     background-color: rgba(0,0,0,0);
     border: 1px solid rgba(47, 49, 53, .4);
     color: rgba(47, 49, 53, .4);
-    padding: 5px;
+    padding: 1vh;
 	display: inline-block;
 }
 
-#resetbutton {
-    background-color: rgba(0,0,0,0);
-    border: 1px solid rgba(47, 49, 53, .4);
-    color: rgba(47, 49, 53, .4);
-    padding: 5px;
-	display: inline-block;
+.material-icons {
+	font-size: 4vh !important;
 }
 
 .dice {
-	margin:40px 20px;
+	margin:8vh 2vh;
 	display: inline-block;
 }
 
 .dice img {
-	max-height: 100px;
+	max-height: 15vh;
 }
 
 #diceholder {
 	background-color: #2f3135;
 	width: 100%;
-	min-height:180px;
 }
 
 #buttonholder {
@@ -84,9 +77,9 @@ main {
 	background-color: #36ba34;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 3vh 6vh;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 4vh;
 }
